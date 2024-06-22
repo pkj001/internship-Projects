@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Choose Your Plan</h1>
+    </header>
+    <main>
+        <div class="controls">
+            <label for="currency">Currency:</label>
+            <select id="currency">
+                <option value="USD">$</option>
+                <option value="EUR">€</option>
+                <option value="INR">₹</option>
+            </select>
+            <label for="unit">Unit:</label>
+            <select id="unit">
+                <option value="month">/month</option>
+                <option value="year">/year</option>
+            </select>
+        </div>
+        <section class="pricing-table">
+            <div class="pricing-card">
+                <h2>Basic Plan</h2>
+                <p class="price"><span class="currency">$</span><span class="amount">10</span><span class="unit">/month</span></p>
+                <ul>
+                    <li><i class="features"></i> Feature 1</li>
+                    <li><i class="features"></i> Feature 2</li>
+                    <li><i class="features"></i> Feature 3</li>
+                </ul>
+                <button>Pay now</button>
+            </div>
+            <div class="pricing-card featured">
+                <h2>Standard Plan</h2>
+                <p class="price"><span class="currency">$</span><span class="amount">20</span><span class="unit">/month</span></p>
+                <ul>
+                    <li><i class="features"></i> Feature 1</li>
+                    <li><i class="features"></i> Feature 2</li>
+                    <li><i class="features"></i> Feature 3</li>
+                    <li><i class="features"></i> Feature 4</li>
+                </ul>
+                <button>Pay now</button>
+            </div>
+            <div class="pricing-card">
+                <h2>Premium Plan</h2>
+                <p class="price"><span class="currency">$</span><span class="amount">30</span><span class="unit">/month</span></p>
+                <ul>
+                    <li><i class="features"></i> Feature 1</li>
+                    <li><i class="features"></i> Feature 2</li>
+                    <li><i class="features"></i> Feature 3</li>
+                    <li><i class="features"></i> Feature 4</li>
+                    <li><i class="features"></i> Feature 5</li>
+                </ul>
+                <button>Pay now</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Pricing Page. All rights reserved.</p>
+    </footer>
+
+    <!-- Modal Popup for Sign-Up Confirmation -->
+    <div id="signup-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Payment Confirmation</h2>
+            <p>Your payment is sucessful for <span id="selected-plan"></span>!</p>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

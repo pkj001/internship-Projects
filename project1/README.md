@@ -1,0 +1,2 @@
+# internProjects
+This repository contains the source code for the Pricing Landing Page project, developed as part of a web development internship. The primary objective of this project is to demonstrate a user-friendly pricing page for a fictional product or service.
