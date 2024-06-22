@@ -1,1 +1,1 @@
-This repository contain  all projects , assigned during the internship.
+This repository contain  all projects assigned during the internship.
